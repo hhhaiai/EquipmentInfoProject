@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myfittinglife.equipmentinfoproject">
+
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+<!--    &lt;!&ndash;获取地理位置信息权限&ndash;&gt;-->
+<!--    &lt;!&ndash; 用于访问GPS定位 &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+<!--    &lt;!&ndash; 允许程序访问CellID或WiFi热点来获取粗略的位置 &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />-->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".location.LocationActivity"></activity>
+        <activity android:name=".imei.IMEIActivity" />
+        <activity android:name=".mac.MacActivity" />
+        <activity android:name=".simoperatorname.SimOperatorNameActivity" />
+        <activity android:name=".oaid.OAIDActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
