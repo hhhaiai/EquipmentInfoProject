@@ -2,15 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myfittinglife.equipmentinfoproject">
 
-<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+    <uses-permission android:name="android.permission.INTERNET"/>
 <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
 <!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
-<!--    &lt;!&ndash;获取地理位置信息权限&ndash;&gt;-->
-<!--    &lt;!&ndash; 用于访问GPS定位 &ndash;&gt;-->
-<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
-<!--    &lt;!&ndash; 允许程序访问CellID或WiFi热点来获取粗略的位置 &ndash;&gt;-->
-<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
-<!--    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />-->
+    <!--获取地理位置信息权限-->
+    <!-- 使用GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 使用WiFi热点或基站来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
 
     <application

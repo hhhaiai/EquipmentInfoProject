@@ -43,5 +43,4 @@ dependencies {
     //谷歌相关的，(这里引入是相判断是否支持谷歌服务)
     implementation 'com.google.android.gms:play-services-places:9.6.1'
     implementation 'com.google.android.gms:play-services-maps:9.6.1'
-
 }
