@@ -52,7 +52,8 @@ class IMEIActivity : AppCompatActivity() {
      */
     private fun getIMEI() {
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q){
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q &&Build.VERSION.SDK_INT>Build.VERSION_CODES.O){
             val permissionList = mutableListOf<String>()
             permissionList.add(android.Manifest.permission.READ_PHONE_STATE)
             //判断是否有READ_PHONE_STATE权限

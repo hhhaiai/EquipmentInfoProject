@@ -111,7 +111,7 @@ class LocationActivity : AppCompatActivity() {
 
 
     /**
-     * 查看手机是否支持谷歌服务
+     * 查看手机是否支持谷歌服务()
      */
     private fun isSupportGoogleService() {
         val apiAvailability = GoogleApiAvailability.getInstance()

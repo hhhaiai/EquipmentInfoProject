@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.myfittinglife.equipmentinfoproject.imei.IMEIActivity
+import com.myfittinglife.equipmentinfoproject.ip.IPActivity
 import com.myfittinglife.equipmentinfoproject.location.LocationActivity
 import com.myfittinglife.equipmentinfoproject.mac.MacActivity
 import com.myfittinglife.equipmentinfoproject.oaid.OAIDActivity
@@ -31,9 +32,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {
         const val TAG = "ceshi"
-
-        //IMEI需要的权限申请
-        const val IMEI_REQUEST_CODE = 1
     }
 
 
@@ -79,7 +77,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             //获取设备IP
             R.id.btnIP->{
-
+                startActivity(Intent(this,IPActivity::class.java))
             }
             //获取Mac地址
             R.id.btnMac->{
