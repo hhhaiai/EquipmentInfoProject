@@ -2,11 +2,11 @@
 
 [手机运营商获取](https://blog.csdn.net/Myfittinglife/article/details/118685804)
 
-OAID、IMEI、AndroidID获取
+[OAID、IMEI、AndroidID获取](https://blog.csdn.net/Myfittinglife/article/details/121520111)
 
 [地理位置信息经纬度获取](https://blog.csdn.net/Myfittinglife/article/details/119010909)
 
-公网IP地址获取：移动网络IP、Wifi IP
+[公网IP地址获取：移动网络IP、Wifi IP](https://blog.csdn.net/Myfittinglife/article/details/121636941)
 
 屏幕相关信息：密度、物理尺寸获取
 
