@@ -2,7 +2,6 @@ package com.myfittinglife.equipmentinfoproject
 
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,9 +9,7 @@ import android.provider.Settings
 import android.telephony.TelephonyManager
 import android.util.Log
 import android.view.View
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
+import com.myfittinglife.equipmentinfoproject.build.BuildActivity
 import com.myfittinglife.equipmentinfoproject.imei.IMEIActivity
 import com.myfittinglife.equipmentinfoproject.ip.IPActivity
 import com.myfittinglife.equipmentinfoproject.location.LocationActivity
@@ -20,7 +17,6 @@ import com.myfittinglife.equipmentinfoproject.mac.MacActivity
 import com.myfittinglife.equipmentinfoproject.oaid.OAIDActivity
 import com.myfittinglife.equipmentinfoproject.simoperatorname.SimOperatorNameActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import java.lang.StringBuilder
 
 /**
 @Author LD
@@ -48,6 +44,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnIP.setOnClickListener(this)
         btnMac.setOnClickListener(this)
         btnLocation.setOnClickListener(this)
+        btnBuild.setOnClickListener(this)
         btnClear.setOnClickListener {
             tvInfo.text=""
         }
@@ -86,6 +83,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             //获取地理位置信息
             R.id.btnLocation->{
                 startActivity(Intent(this,LocationActivity::class.java))
+            }
+            //获取Build下的相关属性
+            R.id.btnBuild->{
+                startActivity(Intent(this, BuildActivity::class.java))
             }
 
         }

@@ -4,11 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<!--     获取地理位置信息权限 -->
-<!--     使用GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取地理位置信息权限 -->
+    <!-- 使用GPS定位 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 使用WiFi热点或基站来获取粗略的位置 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ip.IPActivity"></activity>
+        <activity android:name=".build.BuildActivity"></activity>
+        <activity android:name=".ip.IPActivity" />
         <activity android:name=".location.LocationActivity" />
         <activity android:name=".imei.IMEIActivity" />
         <activity android:name=".mac.MacActivity" />
